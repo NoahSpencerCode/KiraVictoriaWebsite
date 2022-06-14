@@ -27,14 +27,18 @@
 
     <!--<div class="paralax"></div>-->
 
-    <img id='bg' src="images/background2.JPG" class="para"/>
+    <div id="bg">
+        <img src="images/background2.JPG" class="para"/>
+        <img src="images/background1.JPG" class="para"/>
+    </div>
+    
 
     <script type="text/javascript">
         let bg = document.getElementById('bg');
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
-            bg.style.top = value * 0.5 + 'px';
+            bg.style.top = value * 0.04 + 'vh';
         })
     </script>
 
