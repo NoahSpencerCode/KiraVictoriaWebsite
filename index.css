@@ -33,6 +33,7 @@ section{
     margin-bottom: 80vh;
     margin-top: 80vh;
     height: 90vh;
+    box-shadow: 0px 0px 50px black;
 }
 
 .para{
