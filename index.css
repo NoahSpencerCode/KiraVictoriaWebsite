@@ -3,6 +3,11 @@ body{
     margin: 0px;
 }
 
+nav a{
+    padding: 0vw 1vw;
+    color: black;
+}
+
 .heading{
     display: flex;
     justify-content: space-between;
