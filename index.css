@@ -27,6 +27,33 @@ header{
 section{
     background-color: white;
     padding: 1%;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    margin-bottom: 40%;
+    margin-top: 40%;
+    height: 200px;
+}
+
+.paralax {
+    background-image: url("images/background2.JPG");
+    
+    height: 1000px;
+
+    background-attachment: fixed;
+
+    background-position: 0px -300px;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.para{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: 0px 30%;
+    object-fit: cover;
+    pointer-events: none; /* study */
+    z-index: -1;
 }
