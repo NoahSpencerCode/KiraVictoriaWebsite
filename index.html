@@ -27,7 +27,16 @@
 
     <!--<div class="paralax"></div>-->
 
-    <img src="images/background2.JPG" class="para"/>
+    <img id='bg' src="images/background2.JPG" class="para"/>
+
+    <script type="text/javascript">
+        let bg = document.getElementById('bg');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+        })
+    </script>
 
     <main>
 
