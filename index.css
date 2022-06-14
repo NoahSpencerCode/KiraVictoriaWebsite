@@ -53,3 +53,20 @@ section{
     top: 0;
     left: 0;
 }
+
+.homeImgs{
+    width: 15vw;
+
+
+}
+
+.img_container{
+    background-color: rgb(255, 242, 221);
+    height: auto;
+    width: auto;
+    box-shadow: 5px 5px 12px black;
+    padding: 1vw 1vw;
+    display:inline-block;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
