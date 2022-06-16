@@ -124,9 +124,10 @@ footer{
 }
 
 #bg #sec_contact{
-    top: 365vh;
+    top: 370vh;
 }
 #about_text h3{
     text-align: left;
     font-size: 2em;
+    font-weight: 900;
 }

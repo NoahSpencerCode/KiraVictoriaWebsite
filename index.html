@@ -17,8 +17,11 @@
             <a href="#section2">Photography</a>
             <a href="#section3">Videography</a>
             <a href="#section4">Contact</a>
-            <a href="https://instagram.com/kiravanderson?">
+            <a href="https://instagram.com/kiravanderson?" style="padding-right: 0;">
                 <img src="images/insta.png" alt="Instagram logo"/>
+            </a>
+            <a href="https://www.tiktok.com/t/ZTdwswbPL/" style="padding-left: 0;">
+                <img src="images/tiktok2.png" alt="Tiktok logo" style="width: 50px;"/>
             </a>
         </nav>
     </header>
@@ -26,13 +29,13 @@
     <!--<div class="paralax"></div>-->
 
     <div id="bg">
-        <img src="images/background2.JPG" class="para"/>
+        <img src="images/newbackground.png" class="para" style="object-position: center 0%;"/>
         <h2 id="sec_kira">KIRA</h2>
-        <img src="images/background5.JPG" class="para" style="object-position: center 0%;"/>
+        <img src="images/background5.JPG" class="para" style="object-position: center 10%;"/>
         <h2 id="sec_photography">PHOTOGRAPHY</h2>
-        <img src="images/background3.JPG" class="para" style="object-position: center 40%;"/>
+        <img src="images/background3.JPG" class="para" style="object-position: center 30%;"/>
         <h2 id="sec_videography">VIDEOGRAPHY</h2>
-        <img src="images/background4.JPG" class="para" style="object-position: center 10%; height: 130vh;"/>
+        <img src="images/newbackground2.png" class="para" style="object-position: center 5%; height: 130vh;"/>
         <h2 id="sec_contact">CONTACT ME</h2>
     </div>
     
@@ -51,13 +54,13 @@
             let distFromKira = Math.abs(-value)
             sec_kira.style.opacity = 1-(distFromKira/200)
 
-            let distFromPhoto = Math.abs(1500-value)
+            let distFromPhoto = Math.abs(1400-value)
             sec_photography.style.opacity = 1-(distFromPhoto/400)
 
-            let distFromVideo = Math.abs(3100-value)
+            let distFromVideo = Math.abs(2900-value)
             sec_videography.style.opacity = 1-(distFromVideo/400)
 
-            let distFromContact = Math.abs(4700-value)
+            let distFromContact = Math.abs(4400-value)
             sec_contact.style.opacity = 1-(distFromContact/400)
         })
     </script>
@@ -68,8 +71,8 @@
 
                 <div id="about_text">
                     <h1>About Me</h1>
-                    <h3>Age: 21</h3>
-                    <h3>Location: ARIZONA</h3>
+                    <h3 style="margin-bottom: 0;">Age: 21</h3>
+                    <h3 style="margin-top: 0;">Location: Arizona</h3>
                 </div>
                 <div id="about_pictures">
                     
@@ -95,6 +98,9 @@
         <h2>KVA</h2>
         <a href="https://instagram.com/kiravanderson?">
             <img src="images/insta.png" alt="Instagram logo"/>
+        </a>
+        <a href="https://www.tiktok.com/t/ZTdwswbPL/" style="padding-left: 0;">
+            <img src="images/tiktok2.png" alt="Tiktok logo" style="width: 50px;"/>
         </a>
     </footer>
 </body>
