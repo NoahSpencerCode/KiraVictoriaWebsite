@@ -6,7 +6,18 @@ body{
 nav a{
     padding: 0vw 1vw;
     color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    font-weight: bolder;
 
+}
+nav a img:hover{
+    opacity: 0.5;
+}
+
+footer a img:hover{
+    opacity: 0.5;
 }
 
 .heading{
