@@ -110,7 +110,8 @@ footer{
     font-size: 5rem;
     text-align: center;
     transform: translate(-50%, -50%);
-    text-shadow: 4px 4px 0px white, 0px 0px 30px black;
+    color: white;
+    text-shadow: 4px 4px 0px #996d41, 0px 0px 30px black;
 }
 
 #bg #sec_photography{
