@@ -97,10 +97,11 @@ footer{
 #about_text{
     width: 50%;
     text-align: center;
+    padding: 0vw 10vw;
 }
 
 #about_text h1{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 #bg h2 {
@@ -124,4 +125,8 @@ footer{
 
 #bg #sec_contact{
     top: 365vh;
+}
+#about_text h3{
+    text-align: left;
+    font-size: 2em;
 }
