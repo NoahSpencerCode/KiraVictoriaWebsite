@@ -117,6 +117,10 @@ footer{
     font-size: 4rem;
 }
 
+#about_text p{
+    text-align: left;
+}
+
 #bg h2 {
     position: absolute;
     top: 35vh;
@@ -242,4 +246,37 @@ footer{
 }
 .h-6{
     grid-row: span 6;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(223, 223, 223);
+    padding: 20px;
+    width: 80%;
+    height: 80%;
 }
