@@ -45,19 +45,22 @@
 
         window.addEventListener('scroll', function(){
             let value = window.scrollY;
-            bg.style.top = value * 0.039 + 'vh';
+            
+            bg.style.top = value/window.innerHeight * 50 + 'vh';
 
-            let distFromKira = Math.abs(-value)
-            sec_kira.style.opacity = 1-(distFromKira/200)
+            let distFromKira = Math.abs(0-value/window.innerHeight)
+            sec_kira.style.opacity = 1-(distFromKira/.75)
 
-            let distFromPhoto = Math.abs(1400-value)
-            sec_photography.style.opacity = 1-(distFromPhoto/400)
+            let distFromPhoto = Math.abs(2-value/window.innerHeight)
+            sec_photography.style.opacity = 1-(distFromPhoto/.75)
 
-            let distFromVideo = Math.abs(2900-value)
-            sec_videography.style.opacity = 1-(distFromVideo/400)
+            let distFromVideo = Math.abs(4-value/window.innerHeight)
+            sec_videography.style.opacity = 1-(distFromVideo/.75)
 
-            let distFromContact = Math.abs(4400-value)
-            sec_contact.style.opacity = 1-(distFromContact/400)
+            let distFromContact = Math.abs(6-value/window.innerHeight)
+            sec_contact.style.opacity = 1-(distFromContact/.75)
+
+            console.log(distFromPhoto)
         })
     </script>
 

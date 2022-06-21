@@ -1,6 +1,7 @@
 body{
     background-color: #FFFDD0;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a{
@@ -48,9 +49,9 @@ header{
 section{
     background-color: white;
     padding: 1vh;
-    margin-bottom: 80vh;
-    margin-top: 80vh;
-    height: 90vh;
+    margin-bottom: 0vh;
+    margin-top: 100vh;
+    height: 100vh;
     box-shadow: 0px 0px 50px black;
     display: flex;
     justify-content: space-between;
@@ -60,9 +61,11 @@ section{
 .para{
     
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     object-position: center 30%;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -73,6 +76,8 @@ section{
     pointer-events: none; /* study */
     top: 0;
     left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .homeImgs{
@@ -136,25 +141,26 @@ footer{
 
 #bg h2 {
     position: absolute;
-    top: 35vh;
+    top: 50vh;
     left: 50%;
-    font-size: 5rem;
+    font-size: 8vw;
     text-align: center;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-60%);
     color: white;
     text-shadow: 4px 4px 0px #996d41, 0px 0px 30px black;
+    white-space: nowrap;
 }
 
 #bg #sec_photography{
-    top: 145vh;
+    top: 150vh;
 }
 
 #bg #sec_videography{
-    top: 255vh;
+    top: 250vh;
 }
 
 #bg #sec_contact{
-    top: 370vh;
+    top: 350vh;
 }
 #about_text h3{
     text-align: left;
