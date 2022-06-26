@@ -36,33 +36,6 @@
         <h2 id="sec_contact">CONTACT ME</h2>
     </div>
     
-    <script type="text/javascript">
-        let bg = document.getElementById('bg');
-        let sec_kira = document.getElementById('sec_kira')
-        let sec_photography = document.getElementById('sec_photography')
-        let sec_videography = document.getElementById('sec_videography')
-        let sec_contact = document.getElementById('sec_contact')
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            
-            bg.style.top = value/window.innerHeight * 50 + 'vh';
-
-            let distFromKira = Math.abs(0-value/window.innerHeight)
-            sec_kira.style.opacity = 1-(distFromKira/.75)
-
-            let distFromPhoto = Math.abs(2-value/window.innerHeight)
-            sec_photography.style.opacity = 1-(distFromPhoto/.75)
-
-            let distFromVideo = Math.abs(4-value/window.innerHeight)
-            sec_videography.style.opacity = 1-(distFromVideo/.75)
-
-            let distFromContact = Math.abs(6-value/window.innerHeight)
-            sec_contact.style.opacity = 1-(distFromContact/.75)
-
-            console.log(distFromPhoto)
-        })
-    </script>
 
     <main>
 
@@ -77,66 +50,7 @@
                 </div>
 
                 <div id="about_pictures">
-                    <div class="container"> 
-
-                        <div class="gallery-container w-2 h-3">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/A.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-2 h-3">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/B.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-4 h-4">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/D.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-2 h-3">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/E.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-2 h-3">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/C.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-4 h-4">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/F.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="gallery-container w-4 h-4">
-                            <div class="gallery-item">
-                                <div class="image">
-                                    <img src="images/G.JPG">
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    
                 </div>
         </section>
 
@@ -354,6 +268,45 @@
             <img src="images/tiktok2.png" alt="Tiktok logo" style="width: 50px;"/>
         </a>
     </footer>
+
+    <script type="text/javascript">
+
+
+        
+
+        let bg = document.getElementById('bg');
+        let sec_kira = document.getElementById('sec_kira')
+        let sec_photography = document.getElementById('sec_photography')
+        let sec_videography = document.getElementById('sec_videography')
+        let sec_contact = document.getElementById('sec_contact')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            
+            bg.style.top = value/window.innerHeight * 50 + 'vh';
+
+            let distFromKira = Math.abs(0-value/window.innerHeight)
+            sec_kira.style.opacity = 1-(distFromKira/.75)
+
+            let distFromPhoto = Math.abs(2-value/window.innerHeight)
+            sec_photography.style.opacity = 1-(distFromPhoto/.75)
+
+            let distFromVideo = Math.abs(4-value/window.innerHeight)
+            sec_videography.style.opacity = 1-(distFromVideo/.75)
+
+            let distFromContact = Math.abs(6-value/window.innerHeight)
+            sec_contact.style.opacity = 1-(distFromContact/.75)
+
+            console.log(distFromPhoto)
+        })
+
+        for (let i = 1; i <= 10; i++) {
+            const div = document.createElement('div');
+            div.id = 'newFrame'
+            div.style.backgroundImage = `url(images/${i}.JPG)`;
+            document.getElementById("about_pictures").appendChild(div);
+        }
+    </script>
 </body>
 </html>
 

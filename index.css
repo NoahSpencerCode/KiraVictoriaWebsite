@@ -168,9 +168,41 @@ footer{
     font-weight: 900;
 }
 
+#newFrame{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 0.3em;
+    height: 10em;
+    width: 10em;
+    flex-grow: 1;
+}
+
+#newFrame:nth-child(2n) {
+    width: 15em;
+}
+
+#newFrame:nth-child(2n) {
+    width: 14em;
+}
+
+#newFrame:nth-child(4n) {
+    width: 12em;
+}
+
+#newFrame:nth-child(5n) {
+    width: 7em;
+}
+
+#newFrame:nth-child(6n) {
+    width: 20em;
+}
+
 #about_pictures{
     width: 50%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .row {
