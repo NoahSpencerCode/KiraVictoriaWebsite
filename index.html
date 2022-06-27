@@ -55,187 +55,11 @@
         </section>
 
         <section id="section2">
-            <div class="container"> 
-
-                <div class="gallery-container w-2 h-5">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/H.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-1 h-3">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewA.JPG">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="gallery-container w-1 h-3">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewB.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewC.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-5">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewD.JPG">
-                        </div>
-                    </div>
-                </div>
-
-
-                
-
-                <div class="gallery-container w-2 h-5">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/P.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                
-                
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/R.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-1 h-3">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/S.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/T.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-1 h-3">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/U.JPG">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            
         </section>
         
         <section id="section3">
-            <div class="container"> 
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewA.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewB.JPG">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="gallery-container w-1 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewC.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/NewD.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-1 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/M.JPG">
-                        </div>
-                    </div>
-                </div>
-
-
-                
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/P.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                
-                
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/R.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/S.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/T.JPG">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="gallery-container w-2 h-4">
-                    <div class="gallery-item">
-                        <div class="image">
-                            <img src="images/U.JPG">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            
         </section>
         
         <section id="section4">
@@ -305,6 +129,20 @@
             div.id = 'newFrame'
             div.style.backgroundImage = `url(images/${i}.JPG)`;
             document.getElementById("about_pictures").appendChild(div);
+        }
+
+        for (let i = 1; i <= 30; i++) {
+            const div = document.createElement('div');
+            div.id = 'newFrame'
+            div.style.backgroundImage = `url(images/${i}.JPG)`;
+            document.getElementById("section2").appendChild(div);
+        }
+
+        for (let i = 1; i <= 30; i++) {
+            const div = document.createElement('div');
+            div.id = 'newFrame'
+            div.style.backgroundImage = `url(images/${i}.JPG)`;
+            document.getElementById("section3").appendChild(div);
         }
     </script>
 </body>

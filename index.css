@@ -46,6 +46,8 @@ header{
     z-index: 5;
 }
 
+
+
 section{
     background-color: white;
     padding: 1vh;
@@ -56,6 +58,16 @@ section{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+}
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .para{
